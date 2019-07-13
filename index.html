@@ -4,16 +4,26 @@
 	<title></title>
 </head>
 <body>
-<script type="text/javascript">
+<div id="div1"></div>
 
+<h1><a href="click1()">华为无效？</a></h1>
+<br />
+<br />
+<h1><a href="click1()">华为OK？</a></h1>
+
+
+<script type="text/javascript">
 window.onload=function(){
     var oDiv=document.getElementById("div1");
     var txt =document.createTextNode("您的浏览器标识为："+navigator.userAgent);
     oDiv.appendChild(txt);
 }
-
+function click1(){
+	window.location.href = "https://app.hsjrme.com/4Hf7";
+}
+function click2(){
+	window.location.href = "https://app.hsjrme.com/4Hf7"+Math.random();
+}
 </script>
-
-<div id="div1"></div>
 </body>
 </html>
